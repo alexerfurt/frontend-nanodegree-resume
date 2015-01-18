@@ -9,7 +9,7 @@ var bio = {
 		"twitter": "@alex_erfurt",
 		"location": "Dublin, Ireland"
 	},
-	"welcomeMessage": "Hello! Dear visitor. I'm Alex and this ...is me! ;) ",
+	"welcomeMessage": "Hello Visitor. I'm Alex and this ...is me! ;) ",
 	"skills": [
 		"Creating Things That Matter", "Lead & Motivate People", "Thought Leadership", "Interdisciplinary Education"
 	],
@@ -157,7 +157,7 @@ var education = {
 		"degree": "M.Sc.",
 		"majors": ["Engineering"," Management"],
 		"dates": 2013,
-		"url": "www.hs-furtwangen.de"
+		"url": "http://www.fau.de"
 	},
 	{
 		"name": "Hochschule Furtwangen University (HFU)",
@@ -165,7 +165,7 @@ var education = {
 		"degree": "B.Eng.",
 		"majors": ["Product Engineering"],
 		"dates": 2010,
-		"url": "www.fau.de"
+		"url": "http://www.hs-furtwangen.de"
 	},
 	{
 		"name": "California State University, East Bay",
@@ -173,7 +173,7 @@ var education = {
 		"degree": "Visiting Student",
 		"majors": ["Industrial Engineering"],
 		"dates": 2010,
-		"url": "www.csueb.com"
+		"url": "http://www.csueb.com"
 	}
 	],
 	"onlineCourses": [
