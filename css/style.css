@@ -33,6 +33,10 @@ h3 {
   font-size: 20px;
   color: #000000;
   line-height: 22px;
+  padding-top:20px;
+  padding-bottom: 0px;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 h4 {
@@ -42,7 +46,7 @@ h4 {
   line-height: 17px;
 }
 
-h2, h3, h4, h5 {
+h2, h4, h5 {
   padding:10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -110,6 +114,12 @@ a {
   clear:both;
 }
 
+.white {
+  /*background-color: #F3F3F3;*/
+  padding-bottom: 10px;
+  clear:both;
+}
+
 .dark-gray {
   background-color: #4A4A4A;
 }
@@ -126,13 +136,19 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
+  padding-bottom: 15px;
+}
+
+.flex-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
   padding-right: 5%;
-  padding-bottom: 2.5%
+  padding-bottom: 2%
 }
 
 ul {
@@ -141,7 +157,10 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  padding-right: 10px;
+  padding-left: 0px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   width: 200px;
   display: none;
 }
@@ -164,10 +183,15 @@ img {
 
 span {
   padding: 5px;
+  color: white;
 }
 
 #letsConnect {
   text-align: center;
+}
+
+#topContacts {
+
 }
 
 @media only screen and (max-width: 1024px) {
