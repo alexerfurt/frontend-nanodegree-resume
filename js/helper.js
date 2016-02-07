@@ -23,9 +23,9 @@ var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
+var HTMLbioStart = '<div class="bio-entry"></div>';
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';
-
 var HTMLskillsStart = '<h3 id="skillsH3">Skills & Interests at a Glance:</h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
@@ -52,9 +52,6 @@ var HTMLschoolLocation = '<div class="location-text">%data%</div><br>';
 
 var HTMLonlineClasses = '<h3>Accomplished Online Courses @ Udacity</h3>';
 var HTMLonlineTitle = '<li class="flex-courseitems"><a href="#">%data%</a></li>';
-//var HTMLonlineSchool = ' - %data%</a>';
-//var HTMLonlineDates = '<div class="date-text">%data%</div><br>';
-//var HTMLonlineURL = '<br><a href="#">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';
 var googleMap = '<div id="map"></div>';
