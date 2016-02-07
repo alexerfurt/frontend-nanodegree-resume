@@ -23,15 +23,15 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #666;
   line-height: 29px;
   padding: 10px;
 }
 
 h3 {
-  font-style: italic;
+  font-style: bold;
   font-size: 20px;
-  color: #000000;
+  color: #777;
   line-height: 22px;
   padding-top:20px;
   padding-bottom: 0px;
@@ -84,8 +84,8 @@ a {
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
+  font-weight: bold;
+  font-size: 20px;
   color: #F3F3F3;
   line-height: 28px;
 }
@@ -104,7 +104,7 @@ a {
 }
 
 .white-text {
-  font-weight: bold;
+  /*font-weight: bold;*/
   color: #FFFFFF;
 }
 
@@ -121,12 +121,12 @@ a {
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #294860;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #294860;
 }
 
 .flex-box {
@@ -142,6 +142,11 @@ a {
 .flex-item {
   padding-top: 5px;
   padding-bottom: 5px;
+  color: white;
+}
+
+.flex-courseitems {
+  color: #777;
 }
 
 .center-content {
@@ -155,13 +160,36 @@ ul {
   list-style-type: none;
 }
 
+/**.biopic {
+  float: left;
+  padding: 0;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  width: 275px;
+  border: 2px solid white;
+  display: none;
+}
+**/ 
 .biopic {
   float: left;
-  padding-right: 10px;
-  padding-left: 0px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  width: 200px;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  max-width: 100%;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 40%;
+  display: none;
+}
+
+.projectpic {
+  float: left;
+  max-width: 100%;
+  border: 2px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 30%;
   display: none;
 }
 
@@ -191,7 +219,7 @@ span {
 }
 
 #topContacts {
-
+	margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
