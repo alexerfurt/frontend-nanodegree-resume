@@ -1,0 +1,21 @@
+{
+  "name": "frontend-nanodegree-resume",
+  "homepage": "https://github.com/alexerfurt/frontend-nanodegree-resume",
+  "authors": [
+    "alexerfurt"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}

@@ -49,7 +49,6 @@ var HTMLschoolMajor = '<div>Majored in %data%</div>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div><br>';
 
-
 var HTMLonlineClasses = '<h3>Accomplished Online Courses @ Udacity</h3>';
 var HTMLonlineTitle = '<li class="flex-courseitems"><a href="#">%data%</a></li>';
 
