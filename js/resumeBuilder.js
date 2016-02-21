@@ -78,7 +78,7 @@ var work = {
 	"jobs": [
 	{
 		"employer": "Google Inc.",
-		"title": "Associate Account Strategist",
+		"title": "Associate Account Strategist in SMB Sales",
 		"location": "Dublin, Ireland",
 		"dates": "March 2014 - Present",
 		"description": "Advising multiple clients on online marketing strategies"
@@ -176,7 +176,7 @@ var education = {
 		"location": "Erlangen, Germany",
 		"degree": "M.Sc.",
 		"majors": ["Engineering & Management"],
-		"dates": 2013,
+		"dates": "2011 - 2013",
 		"url": "http://www.fau.de"
 	},
 	{
@@ -184,7 +184,7 @@ var education = {
 		"location": "Furtwangen, Germany",
 		"degree": "B.Eng.",
 		"majors": ["Product Engineering"],
-		"dates": 2010,
+		"dates": "2006 - 2010",
 		"url": "http://www.hs-furtwangen.de"
 	},
 	{
@@ -192,7 +192,7 @@ var education = {
 		"location": "Hayward, CA, USA",
 		"degree": "Visiting Student",
 		"majors": ["Industrial Engineering"],
-		"dates": 2010,
+		"dates": "2009 - 2010",
 		"url": "http://www.csueb.com"
 	}
 	],
@@ -281,12 +281,7 @@ education.display = function() {
 
 		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
 		var formattedTitleURL = formattedTitle.replace("#", education.onlineCourses[onlineCourse].url);
-		//var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[onlineCourse].school);
-		//var formattedTitleSchool = formattedTitleURL + formattedSchool;
 		$(".education-entry:last").append(formattedTitleURL);
-
-		//var formattedDates = HTMLonlineDates.replace("%data%", education.onlineCourses[onlineCourse].dates);
-		//$(".education-entry:last").append(formattedDates);
 	}
 };
 
@@ -299,7 +294,7 @@ $("#mapDiv").append(googleMap);
 // Internationalization
 
 var inName = function (name) {
-	var splitName = bio.name.split(" ");
+	var splitName = header.name.split(" ");
 	var firstName = splitName[0];
 	var lastName = splitName[1].toUpperCase();
 	var name = firstName + " " +lastName;
@@ -307,7 +302,7 @@ var inName = function (name) {
 	return name;
 };
 
-//$("#main").append(internationalizeButton);
+$("#main").append(internationalizeButton);
 
 
 
