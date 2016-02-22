@@ -1,124 +1,124 @@
 // HEADER Section
 var header = {
-	"name": "Alexander Erfurt",
-	"role": " ---- Tech Enthusiast & Web Developer Apprentice",
-	"contacts": 	{
-		"mobile": "+353-83-450-9703",
-		"email": "erfurtalex@gmail.com",
-		"github": "alexerfurt",
-		"twitter": "@alex_erfurt",
-		"location": "Dublin, Ireland"
-	}
+    "name": "Alexander Erfurt",
+    "role": " ---- Tech Enthusiast & Web Developer Apprentice",
+    "contacts": {
+        "mobile": "+353-83-450-9703",
+        "email": "erfurtalex@gmail.com",
+        "github": "alexerfurt",
+        "twitter": "@alex_erfurt",
+        "location": "Dublin, Ireland"
+    }
 };
 
 
 header.display = function() {
 
-	var formattedName = HTMLheaderName.replace ("%data%", header.name);
-	var formattedRole = HTMLheaderRole.replace ("%data%", header.role);
-	$("#header").prepend(formattedRole);
-	$("#header").prepend(formattedName);
+    var formattedName = HTMLheaderName.replace("%data%", header.name);
+    var formattedRole = HTMLheaderRole.replace("%data%", header.role);
+    $("#header").prepend(formattedRole);
+    $("#header").prepend(formattedName);
 
-	var formattedMobile = HTMLmobile.replace("%data%", header.contacts.mobile);
-	$("#topContacts").append(formattedMobile);
-	$("#footerContacts").append(formattedMobile);
+    var formattedMobile = HTMLmobile.replace("%data%", header.contacts.mobile);
+    $("#topContacts").append(formattedMobile);
+    $("#footerContacts").append(formattedMobile);
 
-	var formattedEmail = HTMLemail.replace("%data%", header.contacts.email);
-	$("#topContacts").append(formattedEmail);
-	$("#footerContacts").append(formattedEmail);
+    var formattedEmail = HTMLemail.replace("%data%", header.contacts.email);
+    $("#topContacts").append(formattedEmail);
+    $("#footerContacts").append(formattedEmail);
 
-	var formattedTwitter = HTMLtwitter.replace("%data%", header.contacts.twitter);
-	$("#topContacts").append(formattedTwitter);
-	$("#footerContacts").append(formattedTwitter);
+    var formattedTwitter = HTMLtwitter.replace("%data%", header.contacts.twitter);
+    $("#topContacts").append(formattedTwitter);
+    $("#footerContacts").append(formattedTwitter);
 
-	var formattedGithub = HTMLgithub.replace("%data%", header.contacts.github);
-	$("#topContacts").append(formattedGithub);
-	$("#footerContacts").append(formattedGithub);
+    var formattedGithub = HTMLgithub.replace("%data%", header.contacts.github);
+    $("#topContacts").append(formattedGithub);
+    $("#footerContacts").append(formattedGithub);
 
-	var formattedLocation = HTMLlocation.replace("%data%", header.contacts.location);
-	$("#topContacts").append(formattedLocation);
-	$("#footerContacts").append(formattedLocation);
-}
+    var formattedLocation = HTMLlocation.replace("%data%", header.contacts.location);
+    $("#topContacts").append(formattedLocation);
+    $("#footerContacts").append(formattedLocation);
+};
 
 header.display();
 
 // BIO Section
 
 var bio = {
-	"welcomeMessage": "Hi there, I'm Alex and this is my first page! ;) ",
-	"skills": [
-		 "Interdisciplinary Knowledge (Engineering, Consulting, Sales)","Creating Things That Really Matter","Aspire to Inspire People","Thought Leadership","Solve for X"
-	],
-	"bioPic" : "images/alex.jpg"
+    "welcomeMessage": "Hi there, I'm Alex and this is my first page! ;) ",
+    "skills": [
+        "Interdisciplinary Knowledge (Engineering, Consulting, Sales)", "Creating Things That Really Matter", "Aspire to Inspire People", "Thought Leadership", "Solve for X"
+    ],
+    "bioPic": "images/alex.jpg"
 };
 
 bio.display = function() {
 
-	$("#aboutMe").append(HTMLbioStart);
+    $("#aboutMe").append(HTMLbioStart);
 
-	var formattedBiopic = HTMLbioPic.replace("%data%", bio.bioPic);
-	$(".bio-entry:last").append(formattedBiopic);
+    var formattedBiopic = HTMLbioPic.replace("%data%", bio.bioPic);
+    $(".bio-entry:last").append(formattedBiopic);
 
-	var formattedWelcomemsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
-	$(".bio-entry:last").append(formattedWelcomemsg);
+    var formattedWelcomemsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
+    $(".bio-entry:last").append(formattedWelcomemsg);
 
-	$(".bio-entry:last").append(HTMLskillsStart);
-	
-	for (var skill in bio.skills) {
-		var formattedSkills	= HTMLskills.replace("%data%", bio.skills[skill]);
-		$(".bio-entry:last").append(formattedSkills);
-	}
-}
+    $(".bio-entry:last").append(HTMLskillsStart);
+
+    for (var skill in bio.skills) {
+        if (bio.skills.hasOwnProperty(skills)) {
+            var formattedSkills = HTMLskills.replace("%data%", bio.skills[skill]);
+            $(".bio-entry:last").append(formattedSkills);
+        }
+    }
+};
 
 bio.display();
 
 // Work Section
 
 var work = {
-	"jobs": [
-	{
-		"employer": "Google Inc.",
-		"title": "Associate Account Strategist in SMB Sales",
-		"location": "Dublin, Ireland",
-		"dates": "March 2014 - Present",
-		"description": "Advising multiple clients on online marketing strategies"
-	},
-	{
-		"employer": "Freelance",
-		"title": "Management Consultant",
-		"location": "Nuremberg, Germany",
-		"dates": "Nov 2011 - Oct 2013",
-		"description": "Worked on several projects to optimize work flows"
-	},
-	{
-		"employer": "Porsche AG",
-		"title": "Intern",
-		"location": "Stuttgart, Germany",
-		"dates": "Oct 2010 - March 2011",
-		"description": "Worked on several internal projects to optimize work flows, especially in the area of purchasing and how the company can be integrated into the 'mothership'"
-	}
-	]
-}
+    "jobs": [{
+        "employer": "Google Inc.",
+        "title": "Associate Account Strategist in SMB Sales",
+        "location": "Dublin, Ireland",
+        "dates": "March 2014 - Present",
+        "description": "Advising multiple clients on online marketing strategies"
+    }, {
+        "employer": "Freelance",
+        "title": "Management Consultant",
+        "location": "Nuremberg, Germany",
+        "dates": "Nov 2011 - Oct 2013",
+        "description": "Worked on several projects to optimize work flows"
+    }, {
+        "employer": "Porsche AG",
+        "title": "Intern",
+        "location": "Stuttgart, Germany",
+        "dates": "Oct 2010 - March 2011",
+        "description": "Worked on several internal projects to optimize work flows, especially in the area of purchasing and how the company can be integrated into the 'mothership'"
+    }]
+};
 
-work.display = function () {
-	for (var job in work.jobs) {
+work.display = function() {
+    for (var job in work.jobs) {
+        if (work.jobs.hasOwnProperty(job)) {
 
-		$("#workExperience").append(HTMLworkStart);
-		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+            $("#workExperience").append(HTMLworkStart);
+            var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 
-		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		var formattedEmployerTitle = formattedEmployer + formattedTitle;
-		$(".work-entry:last").append(formattedEmployerTitle);
+            var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+            var formattedEmployerTitle = formattedEmployer + formattedTitle;
+            $(".work-entry:last").append(formattedEmployerTitle);
 
-		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
-		$(".work-entry:last").append(formattedDates);
+            var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+            $(".work-entry:last").append(formattedDates);
 
-		var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
-		$(".work-entry:last").append(formattedLocation);
+            var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+            $(".work-entry:last").append(formattedLocation);
 
-		var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
-		$(".work-entry:last").append(formattedDescription);
-	};
+            var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+            $(".work-entry:last").append(formattedDescription);
+        }
+    }
 };
 
 work.display();
@@ -127,162 +127,150 @@ work.display();
 // TODO: add more projects and pics
 
 var projects = {
-	"projects": [
-	{
-		"title": "Scripted an 'Email Automation'-Tool",
-		"dates": "2014 - present",
-		"description": "Script to send email confirmation automatically in oder to simplify and enhance the team's work-flow",
-		"images": "images/emautomizer.png"
-	},
-	{
-		"title": "Mobile Product Expert & mSite Specialist",
-		"dates": "2015 - present",
-		"description": "Supporting teams cross-functionally with mobile product knowledge and mSite expertise",
-		"images": ""
-	}
-	]
+    "projects": [{
+        "title": "Scripted an 'Email Automation'-Tool",
+        "dates": "2014 - present",
+        "description": "Script to send email confirmation automatically in oder to simplify and enhance the team's work-flow",
+        "images": "images/emautomizer.png"
+    }, {
+        "title": "Mobile Product Expert & mSite Specialist",
+        "dates": "2015 - present",
+        "description": "Supporting teams cross-functionally with mobile product knowledge and mSite expertise",
+        "images": ""
+    }]
 };
 
 projects.display = function() {
-	for (var project in projects.projects) {
-		$("#projects").append(HTMLprojectStart);
+    for (var project in projects.projects) {
+        if (projects.projects.hasOwnProperty(project)) {
+            $("#projects").append(HTMLprojectStart);
 
-		var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-		$(".project-entry:last").append(formattedTitle);
+            var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+            $(".project-entry:last").append(formattedTitle);
 
-		var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-		$(".project-entry:last").append(formattedDates);
+            var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+            $(".project-entry:last").append(formattedDates);
 
-		var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-		$(".project-entry:last").append(formattedDescription);
+            var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+            $(".project-entry:last").append(formattedDescription);
 
-		if (projects.projects[project].images.length > 0) {
-			//for (image in projects.projects[project].images) {
-				var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
-				$(".project-entry:last").append(formattedImage);
-			//}
-		}
-	}
-}
+            if (projects.projects[project].images.length > 0) {
+                //for (image in projects.projects[project].images) {
+                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images);
+                $(".project-entry:last").append(formattedImage);
+                //}
+            }
+        }
+    }
+};
 
 projects.display();
 
 // Education Section
 
 var education = {
-	"schools": [
-	{
-		"name": "University of Erlangen-Nuremberg (FAU)",
-		"location": "Erlangen, Germany",
-		"degree": "M.Sc.",
-		"majors": ["Engineering & Management"],
-		"dates": "2011 - 2013",
-		"url": "http://www.fau.de"
-	},
-	{
-		"name": "Hochschule Furtwangen University (HFU)",
-		"location": "Furtwangen, Germany",
-		"degree": "B.Eng.",
-		"majors": ["Product Engineering"],
-		"dates": "2006 - 2010",
-		"url": "http://www.hs-furtwangen.de"
-	},
-	{
-		"name": "California State University, East Bay",
-		"location": "Hayward, CA, USA",
-		"degree": "Visiting Student",
-		"majors": ["Industrial Engineering"],
-		"dates": "2009 - 2010",
-		"url": "http://www.csueb.com"
-	}
-	],
-	"onlineCourses": [
-	{
-	  "title": "Intro to HTML and CSS",
-	  "school": "Udacity",
-	  "dates": 2014,
-	  "url": "https://www.udacity.com/course/ud304"
-	 },
-	 {
-	  "title": "JavaScript Basics",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud804"
-	 },
-	 {
-	  "title": "Intro to jQuery",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud245"
-	 },
-	 {
-	  "title": "Intro to AJAX",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud110"
-	 },
-	 {
-	  "title": "HTML5 Canvas",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud292"
-	 },
-	 {
-	  "title": "Object-oriented JavaScript",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud015"
-	 },
-	 {
-	  "title": "JavaScript Design Patterns",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/courses/ud989"
-	 },
-	 {
-	  "title": "JavaScript Testing",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud549"
-	 },
-	 {
-	  "title": "Website Performance Optimization",
-	  "school": "Udacity",
-	  "dates": 2015,
-	  "url": "https://www.udacity.com/course/ud884"
-	 }
-	]
+    "schools": [{
+        "name": "University of Erlangen-Nuremberg (FAU)",
+        "location": "Erlangen, Germany",
+        "degree": "M.Sc.",
+        "majors": ["Engineering & Management"],
+        "dates": "2011 - 2013",
+        "url": "http://www.fau.de"
+    }, {
+        "name": "Hochschule Furtwangen University (HFU)",
+        "location": "Furtwangen, Germany",
+        "degree": "B.Eng.",
+        "majors": ["Product Engineering"],
+        "dates": "2006 - 2010",
+        "url": "http://www.hs-furtwangen.de"
+    }, {
+        "name": "California State University, East Bay",
+        "location": "Hayward, CA, USA",
+        "degree": "Visiting Student",
+        "majors": ["Industrial Engineering"],
+        "dates": "2009 - 2010",
+        "url": "http://www.csueb.com"
+    }],
+    "onlineCourses": [{
+        "title": "Intro to HTML and CSS",
+        "school": "Udacity",
+        "dates": 2014,
+        "url": "https://www.udacity.com/course/ud304"
+    }, {
+        "title": "JavaScript Basics",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud804"
+    }, {
+        "title": "Intro to jQuery",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud245"
+    }, {
+        "title": "Intro to AJAX",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud110"
+    }, {
+        "title": "HTML5 Canvas",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud292"
+    }, {
+        "title": "Object-oriented JavaScript",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud015"
+    }, {
+        "title": "JavaScript Design Patterns",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/courses/ud989"
+    }, {
+        "title": "JavaScript Testing",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud549"
+    }, {
+        "title": "Website Performance Optimization",
+        "school": "Udacity",
+        "dates": 2015,
+        "url": "https://www.udacity.com/course/ud884"
+    }]
 };
 
 education.display = function() {
-	for (var school in education.schools) {
-		$("#education").append(HTMLschoolStart);
+    for (var school in education.schools) {
+        if (education.schools.hasOwnProperty(school)) {
+            $("#education").append(HTMLschoolStart);
 
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		var formattedNameUrl = formattedName.replace("#", education.schools[school].url);
+            var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+            var formattedNameUrl = formattedName.replace("#", education.schools[school].url);
 
-		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedNameDegree = formattedNameUrl + formattedDegree;
-		$(".education-entry:last").append(formattedNameDegree);
-		
-		var formattedMajor= HTMLschoolMajor.replace("%data%", education.schools[school].majors);
-		$(".education-entry:last").append(formattedMajor);
+            var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+            var formattedNameDegree = formattedNameUrl + formattedDegree;
+            $(".education-entry:last").append(formattedNameDegree);
 
-		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		$(".education-entry:last").append(formattedDates);
-		
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
-	}
-	
-	$(".education-entry:last").append(HTMLonlineClasses);
+            var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+            $(".education-entry:last").append(formattedMajor);
 
-	for (var onlineCourse in education.onlineCourses) {
+            var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+            $(".education-entry:last").append(formattedDates);
 
-		var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
-		var formattedTitleURL = formattedTitle.replace("#", education.onlineCourses[onlineCourse].url);
-		$(".education-entry:last").append(formattedTitleURL);
-	}
+            var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+            $(".education-entry:last").append(formattedLocation);
+        }
+    }
+
+    $(".education-entry:last").append(HTMLonlineClasses);
+
+    for (var onlineCourse in education.onlineCourses) {
+        if (education.onlineCourses.hasOwnProperty(onlineCourse)) {
+            var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[onlineCourse].title);
+            var formattedTitleURL = formattedTitle.replace("#", education.onlineCourses[onlineCourse].url);
+            $(".education-entry:last").append(formattedTitleURL);
+        }
+    }
 };
 
 education.display();
@@ -293,19 +281,13 @@ $("#mapDiv").append(googleMap);
 
 // Internationalization
 
-var inName = function (name) {
-	var splitName = header.name.split(" ");
-	var firstName = splitName[0];
-	var lastName = splitName[1].toUpperCase();
-	var name = firstName + " " +lastName;
+var inName = function(name) {
+    var splitName = header.name.split(" ");
+    var firstName = splitName[0];
+    var lastName = splitName[1].toUpperCase();
+    name = firstName + " " + lastName;
 
-	return name;
+    return name;
 };
 
 $("#main").append(internationalizeButton);
-
-
-
-
-
-
