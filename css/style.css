@@ -50,12 +50,12 @@ h3 {
 
 h4 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   color: #4A4A4A;
   line-height: 17px;
 }
 
-h2, h4, h5 {
+h2, h5 {
   padding-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
@@ -101,6 +101,7 @@ a {
 }
 
 #skillsH3 {
+  padding-top:0px;
   color: #F5AE23;
   display: none;
 }
@@ -150,6 +151,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
+  margin-top: 50px;
   background-color: #244D6D;
   box-shadow: #221f1f 0 0 3px;
 
@@ -166,7 +168,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .flex-item {
@@ -183,7 +185,7 @@ a {
   padding-top: 1.5%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 0%
+  padding-bottom: 1.5%;
 }
 
 ul {
@@ -214,13 +216,13 @@ ul {
 }
 
 .projectpic {
-  float: left;
-  max-width: 100%;
-  border: 2px solid black;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 30%;
-  display: none;
+    float: left;
+    padding: 0;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    width: 275px;
+    border: 2px solid white;
+    display: none;
 }
 
 img {

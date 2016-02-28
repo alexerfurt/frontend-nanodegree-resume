@@ -5,12 +5,17 @@
     <meta charset="utf-8">
 
     <!-- Tells the browser what the title of this page should be. -->
-    <title>My Resume</title>
+    <title>Alex' Resume</title>
 
     <!-- Load the page styles. -->
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
     <script src="js/jQuery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/npm.js"></script>
 
     <!-- More on helper.js in the class -->
     <script src="js/helper.js"></script>
@@ -20,33 +25,50 @@
 
     <meta name="viewport" content="width=device-width">
 </head>
+<!-- <h4 class="navbar-text navbar-right navbar-link ">Home</h4>-->
 
-<body unresolved>
-    <div id="main">
-        <div id="header" class="center-content clearfix">
-            <ul id="topContacts" class='flex-box'></ul>
-        </div>
-        <div style='clear: both;'></div>
-        <div id="aboutMe">
-            <h2 id="aboutmeH2">About Me</h2>
-        </div>
-        <div id="workExperience" class='gray'>
-            <h2>Work Experience</h2>
-        </div>
-        <div id="projects" class='white'>
-            <h2>Current Projects</h2>
-        </div>
-        <div id="education" class='gray'>
-            <h2>University Education</h2>
-        </div>
-        <div id="mapDiv">
-            <h2>Where I've Lived and Worked</h2>
-        </div>
-        <div id="letsConnect" class='dark-gray'>
-            <h2 class='orange center-text'>Let's Connect</h2>
-            <ul id="footerContacts" class="flex-box">
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-link"><h4 class="navbar-text navbar-link">Welcome to Alexander's Internet Resumee</h4></a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Bio</a></li>
+                        <li><a href="index.html">Education</a></li>
+                        <li><a href="index.html">Work Experience</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="index.html">Let's Connect</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
+    </nav>
+    <div id="header" class="center-content clearfix">
+        <ul id="topContacts" class='flex-box'></ul>
+    </div>
+    <div style='clear: both;'></div>
+    <div id="workExperience" class='gray'>
+        <h2>Work Experience</h2>
+    </div>
+    <div id="projects" class='white'>
+        <h2>Current Projects</h2>
+    </div>
+    <div id="education" class='gray'>
+        <h2>University Education</h2>
+    </div>
+    <div id="mapDiv">
+        <h2>Where I've Lived and Worked</h2>
+    </div>
+    <div id="letsConnect" class='dark-gray'>
+        <h2 class='orange center-text'>Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+        </ul>
     </div>
 
     <script src="js/resumeBuilder.js"></script>
